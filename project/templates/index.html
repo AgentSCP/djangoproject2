@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Формочка</h1>
+    <form action='user' method="post">
+        {% csrf_token %}
+        {{ form }}
+<!--        <input type="text" placeholder="Имя" name="name">-->
+<!--        <input type="password" placeholder="Возраст" name="age">-->
+        <button>Отправить</button>
+    </form>
+</body>
+</html>
